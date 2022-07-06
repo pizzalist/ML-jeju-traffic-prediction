@@ -35,3 +35,5 @@
 - `<input type="">` : 입력 공간 생성, " "에는 text,password,submit 등이 가능
 - `<input type="" name="">` : name 에는 id, pwd 와 같이 전송할 데이터의 유형 지정
 - `<form action=""></form>` : " "위치에 데이터 코드 전송
+- `value=""` : 기본값 으로 입력되어져있음
+- `<textarea>,</textarea>` : 텍스트 수용량 조절, 사이에 텍스트 기본값 입력
