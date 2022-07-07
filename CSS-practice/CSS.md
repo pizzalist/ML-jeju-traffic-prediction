@@ -1,5 +1,7 @@
 # CSS
 
+**C**ascading **S**tyle **S**heet
+
 ## CSS의 기초 문법과 적용 방법
 
 ### 선택자의 종류
@@ -44,3 +46,26 @@ select : CSS의 주어와 같은 역할로, 중요
   font: bold 5rem/ 2 arial, verdana, "Helvetica Neue", serif;
 }
 ```
+
+`font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit; ` font: 사용시 순서 지키기!
+
+-`html{color:red}` : html전체 (상속)
+
+### cascading
+
+#### 우선순위
+
+1. style attribute
+2. id selector
+3. class selector
+4. tad selector
+
+- 구체적이고 명시적이고 정교한 선택자일수록 우선시
+- `!important` 사용하면 젤 우선
+
+### box model
+
+- `border`
+- `padding`
+- `margin`
+- `width`
