@@ -14,6 +14,7 @@
 ### **meta 태그**
 
 - `<meta charset="utf-8">` : utf-8이라는 방식으로 저장됨, 한글 안깨지게 하기
+- `<meta name="description" content="이노아의 소개자료">` : description 사용
 
 ### **text 단락 , 줄바꿈**
 
