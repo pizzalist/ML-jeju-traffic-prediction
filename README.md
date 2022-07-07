@@ -1,6 +1,6 @@
-> # TIL :octocat:
+> # TIL :hammer:
 
-> Today I learned :rocket:
+> Today I Learned (Today I Play!) :rocket:
 
 ## **목차**
 
