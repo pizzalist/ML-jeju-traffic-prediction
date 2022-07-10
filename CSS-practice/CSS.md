@@ -69,3 +69,7 @@ select : CSS의 주어와 같은 역할로, 중요
 - `padding`
 - `margin`
 - `width`
+
+### box-sizing
+
+box-sizing은 박스의 크기를 화면에 표시하는 방식을 변경하는 속성

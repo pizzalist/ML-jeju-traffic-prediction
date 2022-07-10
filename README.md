@@ -1,6 +1,6 @@
 > # TIL :hammer:
 
-> Today I Learned (Today I Play!) :rocket:
+> Today I Learned :rocket:
 
 ## **목차**
 
