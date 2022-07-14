@@ -3,44 +3,13 @@
     <head>
         <title>WEB1 - JavaScript</title>
         <meta charset="utf-8">
-        <script>
-            function LinksSetColor(color){
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while(i < alist.length){ 
-                    alist[i].style.color = color;
-                    i = i+1;
-                }
-            }
-            function BodySetColor(color){
-                document.querySelector('body').style.color = color;
-            }
-            function BodySetbackgroundColor(color){
-                document.querySelector('body').style.backgroundColor = color;
-            }
-            function nightDayHandler(self){
-                var target = document.querySelector('body');
-                if(self.value === 'day') {
-                    Body.SetbackgroundColor('white');
-                    Body.SetColor('black');
-                    self.value = 'night' ;
-
-                Links.SetColor('blue');
-
-                } else  {
-                    Body.SetbackgroundColor('black');
-                    Body.SetColor('white');
-                    self.value = 'day' ;
-                    
-                    Links.SetColor('powderblue');
-                }
-            }
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="colors.js"></script>
     </head>
     
     <body>
         <h1><a href="index.html">WEB</a></h1>
-        <input type="button" value="day" onclick="
+        <input type="button" value="night" onclick="
             nightDayHandler(this);
         ">
 

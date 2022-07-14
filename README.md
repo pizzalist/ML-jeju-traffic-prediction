@@ -15,3 +15,8 @@
 
 - [CSS 개념 학습](https://github.com/pizzalist/TIL/blob/main/CSS-practice/CSS.md)
 - [CSS 생활코딩 실습](https://github.com/pizzalist/TIL/tree/main/CSS-practice/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9CSS)
+
+## JavaScript
+
+- [JavaScript Checklist]
+- [JavaScript 생활코딩 실습](https://github.com/pizzalist/TIL/tree/main/JavaScript-practice/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9JS.%EC%8B%A4%EC%8A%B5)
