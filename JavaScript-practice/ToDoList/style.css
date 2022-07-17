@@ -1,5 +1,5 @@
 html{
-    background-color: darkolivegreen;
+    background-color: rgb(242, 245, 239);
     text-align: center;
 }
 h1{
@@ -8,16 +8,17 @@ h1{
     font-size: 50px;
 }
 hr{
-    border-color: yellow;
-    border-style: dotted;
-    border-width: 0.5rem;
+    border-color: rgba(85, 107, 47, 0.729);
+    border-style: groove;
+    border-width: 0.2rem;
 }
 #inputField {
     margin: auto;
-    border: gray;
+    border-color: black;
     width: 50rem;
     height: 2rem;
-    border-radius: 1%;
+    
+    
     
 }
 #addToDo{
@@ -25,7 +26,7 @@ hr{
     height: 2.1rem;
     border : none;
     
-    background-color: yellow;
+    background-color: darkolivegreen;
     color: black;
     font-size: 1rem;
     
@@ -43,7 +44,7 @@ ul{
     margin: auto;
     margin-top: 2rem;
     width: 54rem;
-    background-color: rgba(12, 19, 2, 0.301);
+    background-color: rgba(40, 55, 12, 0.5);
     list-style: none;
     padding-left: 0px;
     border: none;
@@ -58,7 +59,7 @@ ul{
     font-size: 15px;
     font-weight: 500;
     font-style: 맑은고딕;
-    color: white;
+    color: black;
     padding: 1rem;
 }
 #changeButton, #saveButton{
@@ -78,9 +79,9 @@ ul{
     margin: auto;
     margin-top: 2rem;
     height: 2.29rem;
-    border-color: yellow;
+    border-color: darkolivegreen;
     border-radius: 5%;
-    background-color: yellow;
+    background-color: darkolivegreen;
     color: black;
     font-size: 1rem;
     font-weight: 550;
