@@ -23,4 +23,4 @@
 
 ## DATABASE
 
--[MySQL](https://github.com/pizzalist/TIL/blob/main/MySQL/MySQL.md)
+- [MySQL](https://github.com/pizzalist/TIL/blob/main/MySQL/MySQL.md)
