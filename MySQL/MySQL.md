@@ -10,11 +10,11 @@
 - row, record, 행
 - column, 열
 
-# data table 생성
+## Create
 
 - sql의 column은 엑셀과 다르게, 데이터형을 가지고 있다. 또한 길이에 대한 규제도 가능하다.
 
-## column 생성
+### column 생성
 
 ```sql
 CREATE TABLE topic(
@@ -36,7 +36,7 @@ CREATE TABLE topic(
 `DATETIME` : 날짜 datatype
 `PRIMARY KEY(id)` : 메인 key가 id이다, 중복 방지
 
-## row 생성
+### row 생성
 
 ```sql
 INSERT INTO topic (title,description,created,author,profile) VALUES('ORACLE','ORACLE is ...',NOW(),'noah','developer');
@@ -47,3 +47,17 @@ INSERT INTO topic (title,description,created,author,profile) VALUES('ORACLE','OR
 ```sql
  SELECT* FROM topic;
 ```
+
+## update
+
+```sql
+UPDATE topic SET description="Oracle is ...",title='Oracle' WHERE id =2;
+```
+
+## Delete
+
+```sql
+DELETE FROM topic WHERE id=5;
+```
+
+- `where` 잊어버리고 Enter키 치면 큰일난다 진짜. 조심하자.
