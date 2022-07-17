@@ -20,3 +20,7 @@
 
 - [JavaScript Checklist](https://github.com/pizzalist/TIL/blob/main/JavaScript-practice/js.md)
 - [JavaScript 생활코딩 실습](https://github.com/pizzalist/TIL/tree/main/JavaScript-practice/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9JS.%EC%8B%A4%EC%8A%B5)
+
+## DATABASE
+
+-[MySQL](https://github.com/pizzalist/TIL/blob/main/MySQL/MySQL.md)
