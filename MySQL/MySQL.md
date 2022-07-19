@@ -54,10 +54,10 @@ INSERT INTO topic (title,description,created,author,profile) VALUES('ORACLE','OR
 UPDATE topic SET description="Oracle is ...",title='Oracle' WHERE id =2;
 ```
 
-## Delete
+## delete
 
 ```sql
 DELETE FROM topic WHERE id=5;
 ```
 
-- `where` 잊어버리고 Enter키 치면 큰일난다 진짜. 조심하자.
+- `WHERE` 잊어버리고 Enter키 치면 큰일난다 진짜. 조심하자.
