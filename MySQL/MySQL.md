@@ -61,3 +61,12 @@ DELETE FROM topic WHERE id=5;
 ```
 
 - `WHERE` 잊어버리고 Enter키 치면 큰일난다 진짜. 조심하자.
+
+
+# 관계형 데이터베이스
+## JOIN
+```sql
+SELECT * FROM topic LEFT JOIN author ON topic.author_id = author.id;
+```
+- 두 table 결합
+- '*'은 모든 column

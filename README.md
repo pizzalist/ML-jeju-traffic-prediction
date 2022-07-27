@@ -27,4 +27,4 @@
 
 ## Python
 
-- [WebCrawling](https://github.com/pizzalist/TIL/blob/main/Python%20crawling/Python_crawling.md)
+- [Crawling](https://github.com/pizzalist/TIL/blob/main/Python%20crawling/Python_crawling.md)
