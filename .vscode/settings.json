@@ -1,5 +1,6 @@
 {
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": true,
-  "editor.autoClosingBrackets": "languageDefined"
+  "editor.autoClosingBrackets": "languageDefined",
+  "liveServer.settings.port": 5501
 }
