@@ -10,7 +10,7 @@ function login(){
         id : id.value,
         password : password.value
     };
-
+// 프론트
     fetch("/login", {
         method: "POST",
         headers: {

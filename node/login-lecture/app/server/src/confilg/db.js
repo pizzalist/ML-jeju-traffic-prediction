@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     password: "778800",
     database:"escape",
     port: '3306',
-
+// 환경변수 
 
 });
 

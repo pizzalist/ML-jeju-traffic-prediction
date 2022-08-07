@@ -1,7 +1,7 @@
 "use strict";
 
-const User = require('../../models/User');
-const UserStorage = require('../../models/UserStorage');
+const User = require('../../../server/src/models/User');
+const UserStorage = require('../../../server/src/models/UserStorage');
 
 const output = {
     hello:(req, res) => {
@@ -29,6 +29,7 @@ const process = {
         const user = new User(req.body);
         const response = await user.register();
         return res.json(response);
+        
     }
 };
 
