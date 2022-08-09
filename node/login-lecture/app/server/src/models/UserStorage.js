@@ -5,13 +5,13 @@ const db = require("../confilg/db");
 
 
 class UserStorage {
-    static #getUserInfo(data, id) {
+    static #getUserInfo(data, email) {
         
                 const users = JSON.parse(data);
-                const idx = users.id.indexOf(id);
+                const emailx = users.email.indexOf(email);
                 const userKeys = Object.keys(users);
                 const userInfo = userKeys.reduce((newUser,info)=> {
-                    newUser[info] = users[info][idx];
+                    newUser[info] = users[info][emailx];
                     return newUser;
                 }, {});
                 return userInfo;
@@ -30,10 +30,10 @@ class UserStorage {
     }
     
 
-    static getUserInfo(id) {
+    static getUserInfo(email) {
         return new Promise((resolve, reject) =>{
-            const query = "SELECT * FROM users WHERE id = ?";
-            db.query(query,[id], (err, data) =>{
+            const query = "SELECT * FROM users WHERE email = ?";
+            db.query(query,[email], (err, data) =>{
                 if (err) reject(`${err}`);
                 resolve(data[0]);
             });
@@ -45,10 +45,10 @@ class UserStorage {
 
     static async save(userInfo) {
         return new Promise((resolve, reject) =>{
-            const query = "INSERT INTO users(id, name, password,lab) VALUES(?,?,?,?);";
+            const query = "INSERT INTO users(email, name, password,lab) VALUES(?,?,?,?);";
             db.query(
                 query,
-                [userInfo.id, userInfo.name, userInfo.password, userInfo.lab], 
+                [userInfo.email, userInfo.name, userInfo.password, userInfo.lab], 
                 (err) =>{
                 if (err) reject(`${err}`);
                 resolve({success: true});

@@ -1,13 +1,13 @@
 "use strict";
 // 프론트 html 과 연결되어 있는 자바 스크립트 파일
-const id = document.querySelector("#id"),
+const email = document.querySelector("#email"),
     password= document.querySelector("#password"),
     loginBtn = document.querySelector("#button");
 
 loginBtn.addEventListener("click", login);
 function login(){
     const req = {
-        id : id.value,
+        email : email.value,
         password : password.value
     };
 // 프론트

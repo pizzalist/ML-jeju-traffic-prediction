@@ -1,14 +1,18 @@
 const { response } = require('express');
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 2000;
 var fs = require('fs');
 const { request } = require('http');
 var path = require('path');
 var qs = require('querystring');
+var bodyParser = require('body-parser');
 var sanitizeHtml = require('sanitize-html');
 var template = require('./lib/template.js');
 
+app.use(bodyParser.urlencoded({ extended: false}));
+
+// route
 app.get('/', (request, response) => {
     fs.readdir('./data', function(error, filelist){
         var title = 'Welcome';
@@ -68,20 +72,14 @@ app.get('/create', (request, response) => {
 });
 
 app.post('/create_process', (request, response) => {
-    var body = '';
-    request.on('data', function (data) {
-        body = body + data;
-    });
-    request.on('end', function () {
-        var post = qs.parse(body);
-        var title = post.title;
-        var description = post.description;
-        fs.writeFile(`data/${title}`, description, 'utf8', 
-        function(err){
-            response.writeHead(302,{Location: `/?id=${title}`});
-            response.end('success');    
-        });
-    });
+    var post = request.body;
+    var title = post.title;
+    var description = post.description;
+    fs.writeFile(`data/${title}`, description, 'utf8', 
+    function(err){
+        response.writeHead(302,{Location: `/?id=${title}`});
+        response.end('success');    
+    })
 });
 
 app.get('/update/:pageId', (request,response) =>{
@@ -110,12 +108,7 @@ app.get('/update/:pageId', (request,response) =>{
 });
 
 app.post('/update_process', (request,response) => {
-    var body = '';
-    request.on('data', function (data) {
-        body = body + data;
-    });
-    request.on('end', function () {
-        var post = qs.parse(body);
+        var post = request.body;
         var id = post.id;
         var title = post.title;
         var description = post.description;
@@ -125,24 +118,19 @@ app.post('/update_process', (request,response) => {
             response.redirect(`/?id=${title}`);
         })
 
-        });
     });
 });
 
+
 app.post('/delect_process', (request,response) =>{
-    var body = '';
-    request.on('data', function (data) {
-        body = body + data;
-    });
-    request.on('end', function () {
-        var post = qs.parse(body);
+        var post = request.body;
         var id = post.id;
         var filteredId = path.parse(id).base;
         fs.unlink(`data/${filteredId}`, function(error){
             response.redirect('/')
-        });
     });
-})
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
