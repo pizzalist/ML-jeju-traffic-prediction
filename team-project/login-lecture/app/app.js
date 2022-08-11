@@ -9,7 +9,7 @@ const members = [
     {
         id:1,
         name:"백경이",
-        lab:"최성철",
+        lab:"이노아",
         loginId:"pknu",
         loginPw:"1234"
     },
