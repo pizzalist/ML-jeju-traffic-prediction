@@ -7,14 +7,16 @@ const jwt = require('jsonwebtoken')
 
 const members = [
     {
-        id:3,
-        name:"도서관",
-        loginId:"lib",
-        loginPw:"a"
+        id:1,
+        name:"백경이",
+        lab:"최성철",
+        loginId:"pknu",
+        loginPw:"1234"
     },
     {
-        id:4,
+        id:2,
         name:"이노아",
+        lab:"이유신",
         loginId:"a",
         loginPw:"a"
     },

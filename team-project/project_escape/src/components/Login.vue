@@ -22,7 +22,7 @@
             <img id="profile-img" src="../assets/백경씨수정본.png" >
             <Form @submit="handleLogin" :validation-schema="schema">
                 <div v-if="state.account.id">
-                    <p>안녕하세요? {{ state.account.name }}님!</p>
+                    <p>안녕하세요? {{ state.account.lab }}교수님 랩실, {{ state.account.name }}학생님!</p>
                     <button @click="logout()">로그아웃</button>
                     
                 </div>
@@ -61,7 +61,8 @@ export default {
         const state = reactive({
             account:{
                 id: null,
-                name:""
+                name:"",
+                lab:"",
             },
             form: {
                 loginId: "",
