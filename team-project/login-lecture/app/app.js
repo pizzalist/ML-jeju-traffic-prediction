@@ -59,12 +59,12 @@ app.post('/api/account', (req, res) => {
 }) 
 
 app.delete('/api/account', (req, res) => {
-    if (req.cookies && req.cookies.token) {
-        res.clearCookie("token");
+    if (req.cookies && req.cookies.account) {
+        res.clearCookie("account");
     }
 
     res.sendStatus(200);
-})
+})  
 
 
 

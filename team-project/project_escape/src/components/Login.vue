@@ -88,8 +88,10 @@ export default {
         };
 
         const logout = ()=>{
-            axios.delect("/api/account").then((res) =>{
+            axios.delete("/api/account").then(() =>{
                 alert("로그아웃하였습니다.");
+                state.account.id= null;
+                state.account.name = "";
         });
         };  
             
