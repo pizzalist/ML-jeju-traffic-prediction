@@ -36,15 +36,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.memo ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.memo ul>li{
-        padding: 15px;
-        margin: 15px;
-}
-</style>
