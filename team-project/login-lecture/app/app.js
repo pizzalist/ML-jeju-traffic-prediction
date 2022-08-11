@@ -16,7 +16,7 @@ const members = [
     {
         id:2,
         name:"이노아",
-        lab:"이유신",
+        lab:"일론머스크",
         loginId:"a",
         loginPw:"a"
     },
