@@ -10,6 +10,15 @@ const db = mysql.createConnection({
 
 });
 
+
+
 db.connect();
+
+// db.query('SELECT * from Users', (error, rows, fields) => {
+//   if (error) throw error;
+//   console.log('User info is: ', rows);
+// });
+
+// db.end();
 module.exports = db;
 

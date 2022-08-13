@@ -4,6 +4,9 @@ const port = 3000
 const bodyParser = require('body-parser')
 const cookieParser = require('cookie-parser')
 const jwt = require('jsonwebtoken')
+const db = require("../app/server/src/confilg/db");
+const { data } = require('jquery')
+
 
 const members = [
     {
@@ -26,7 +29,7 @@ app.use(cookieParser());
 app.use(bodyParser.json())
 
 
-
+//로그인
 
 app.get('/api/account', (req, res) => {
     if(req.cookies && req.cookies.account){
@@ -43,6 +46,12 @@ app.post('/api/account', (req, res) => {
 
     const loginId=   req.body.loginId;
     const loginPw=   req.body.loginPw;
+    
+    // const query = "SELECT * FROM users WHERE loginId = ?";
+    //         db.query(query,[loginId], (err, data) =>{
+    //             if (err) reject(`${err}`);
+    //             return(data[0]);
+    //         });
 
     const member= members.find(m=> m.loginId === loginId && m.loginPw === loginPw);
     if(member) {
@@ -67,6 +76,9 @@ app.delete('/api/account', (req, res) => {
 
     res.sendStatus(200);
 })  
+
+//회원가입
+
 
 
 
