@@ -13,7 +13,7 @@ function register(){
     if(!email.value) return alert("아이디를 입력해주십시오.");
     if(password.value !== confirmPassword.value) return alert("비밀번호가 일치하지 않습니다.")
     
-    const req = {
+    const req = { 
         email : email.value,
         name: name.value,
         password : password.value,

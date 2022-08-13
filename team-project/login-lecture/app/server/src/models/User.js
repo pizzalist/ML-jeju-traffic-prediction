@@ -2,6 +2,7 @@
 
 const UserStorage = require("./UserStorage");
 
+// 로그인
 class User{
     constructor(body) {
         this.body = body;

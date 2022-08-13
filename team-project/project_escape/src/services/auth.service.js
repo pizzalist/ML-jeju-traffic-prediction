@@ -18,12 +18,14 @@ class AuthService {
     localStorage.removeItem('user');
     }
     register(user) {
+    console.log("user: ", user)
     return axios.post(API_URL + 'signup', {
-    laboratory: user.laboratory,
-    username: user.username,
-    email: user.email,
-    password: user.password
+        name: user.username,
+        email: user.email,
+        password: user.password,
+        lab: user.laboratory,
     });
 }
 }
 export default new AuthService();
+// http://localhost:8080/api/signup
