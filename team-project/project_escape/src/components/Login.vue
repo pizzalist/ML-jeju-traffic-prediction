@@ -65,10 +65,9 @@
         },
         methods: {
             handleLogin(user) {
-                console.log(user)
                 this.loading = true;
                 this
-                    .$store
+                    .$store 
                     .dispatch("auth/login", user)
                     .then(() => {
                         this

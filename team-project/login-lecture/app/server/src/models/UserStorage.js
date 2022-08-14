@@ -32,15 +32,14 @@ class UserStorage {
     
 
     static getUserInfo(req, res) {
-        console.log("req.body :", req.body);
         return new Promise((resolve, reject) =>{
             const email = req.body.email;
             const password = req.body.password;
             const query = "SELECT * FROM users WHERE email=? AND password=?";
             db.query(query,[email, password], (err, data) =>{
                 // if (err) reject(`${err}`);
-                console.log("data :" , data);
-                console.log("data :" , !data);
+                // console.log("data :" , data);
+                // console.log("data :" , !data);
 
                 if (data.length === 0){
                     // res.send(202, {success: "로그인 실패"});
