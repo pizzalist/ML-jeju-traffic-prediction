@@ -34,12 +34,23 @@ class UserStorage {
     static getUserInfo(req, res) {
         console.log("req.body :", req.body);
         return new Promise((resolve, reject) =>{
-            const query = "SELECT * FROM users WHERE email = ?";
-            db.query(query,[req.body.email], (err, data) =>{
-                if (err) reject(`${err}`);
+            const email = req.body.email;
+            const password = req.body.password;
+            const query = "SELECT * FROM users WHERE email=? AND password=?";
+            db.query(query,[email, password], (err, data) =>{
+                // if (err) reject(`${err}`);
                 console.log("data :" , data);
-                resolve(res.send(200, {success: "로그인 성공"}));
+                console.log("data :" , !data);
 
+                if (data.length === 0){
+                    // res.send(202, {success: "로그인 실패"});
+                    return res.status(202).send({success: "로그인 실패"});
+                }
+                // res.send(200, {success: "로그인 성공"});
+                return res.status(200).send({success: "로그인 성공"});
+                // if(!data) {
+                // }
+                // resolve(data[0]);
             });
         
         });
