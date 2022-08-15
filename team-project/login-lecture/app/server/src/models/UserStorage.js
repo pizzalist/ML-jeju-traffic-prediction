@@ -5,7 +5,6 @@ const crypto = require('crypto');
 const db = require("../confilg/db");
 
 // 유저정보 db저장
-console.log('누구나년..: ')
 class UserStorage {
     static #getUserInfo(data, email) {
         const users = JSON.parse(data);
@@ -43,7 +42,7 @@ class UserStorage {
 
                 if (data.length === 0){
                     // res.send(202, {success: "로그인 실패"});
-                    return res.status(202).send({success: "로그인 실패"});
+                    return res.status(202).send({false: "로그인 실패"});
                 }
                 // res.send(200, {success: "로그인 성공"});
                 return res.status(200).send({success: "로그인 성공"});
