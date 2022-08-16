@@ -13,7 +13,7 @@
                     <ErrorMessage name="password" class="error-feedback"/>
                 </div>
                 <div class="form-group">
-                    <button class="btn btn-primary btn-block" :disabled="loading">
+                    <button @onclick="submit()" class="btn btn-primary btn-block" :disabled="loading">
                         <span v-show="loading" class="spinner-border spinner-border-sm"></span>
                         <span>로그인</span>
                     </button>
@@ -27,6 +27,8 @@
         </div>
 </template>
 <script>
+    import axios from "axios";
+    import { reactive } from "vue";
     import {Form, Field, ErrorMessage} from "vee-validate";
     import * as yup from "yup";
     export default {
@@ -80,8 +82,53 @@
                         ) || error.message || error.toString();
                     });
             }
-        }
+        },
+
+        setup() {
+        const state = reactive({
+            account:{
+                id: null,
+                name:"",
+                lab:"",
+            },
+            form: {
+                email: "",
+                password: "",
+            },
+        });
+        const submit = () =>{
+            const args={
+                email: state.form.email,
+                password: state.form.password,
+            };
+            
+            axios
+                .post("/api/account", args)
+                .then((res)=>{
+                    alert("로그인에 성공했습니다.");
+                    state.account = res.data;
+                })
+                .catch(()=>{
+                    alert("로그인에 실패하였습니다. 계정 정보를 확인해주세요.");
+                });
+        };
+        const logout = ()=>{
+            axios.delete("/api/account").then(() =>{
+                alert("로그아웃하였습니다.");
+                state.account.id= null;
+                state.account.name = "";
+        });
+        };  
+            
+        axios.get("/api/account").then((res) =>{
+            state.account =res.data;
+        });
+        return { state, submit, logout  };
+    },
     };
+
+
+
 </script>
 
 
