@@ -15,8 +15,7 @@ def zero_or_one_or_empty_ndarray(shape, type, dtype=np.int):
 
 def change_shape_of_ndarray(X, n_row):
     return X.reshape(n_row, -1)
-X = np.ones((32,32), dtype=np.int)
-change_shape_of_ndarray(X, 512)
+
 
 def concat_ndarray(X_1, X_2, axis):
     try:
@@ -24,10 +23,14 @@ def concat_ndarray(X_1, X_2, axis):
     except:
         return False
 
-# 미해결 
-def normalize_ndarray(X, axis, dtype=np.float32):
-    return (X - np.mean(X,axis=0) / np.std(X,axis=0))
-X = np.arange(12, dtype=np.float32).reshape(6,2)
+def normalize_ndarray(X, axis=99, dtype=np.float32):
+    if axis == 99:
+        return (X - np.mean(X) / np.std(X))
+    elif axis == 1: 
+        n_row, n_col =  X.shape
+        return (X - np.mean(X,axis=1).reshape(n_row,-1)) / np.std(X,axis=1).reshape(n_row,-1)
+    elif axis == 0: 
+        return (X - np.mean(X,axis=0).reshape(1,-1)) / np.std(X,axis=0).reshape(1,-1)
 
 
 def save_ndarray(X, filename="test.npy"):
@@ -35,12 +38,11 @@ def save_ndarray(X, filename="test.npy"):
 
 
 def boolean_index(X, condition):
-    return X[eval(str("X") + condition)]
+    return np.where(eval(str("X") + condition))
 
 
 def find_nearest_value(X, target_value):
-    return np.min(abs(X - target_value))
-
+    return X[np.argmin(abs(X - target_value))]
 
 def get_n_largest_values(X, n):
     return np.sort(X)[::-1][:n]
