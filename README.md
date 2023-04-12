@@ -5,6 +5,17 @@
 ## **목차**
 
 ---
+## ML
+- [Numpy](./ml-study/numpy)
+    - lab Assignment : [Numpy in a nutshell](./ml-study/numpy/1_lab_numypy)
+- [Pandas]()
+    - lab Assignment : [Build a Matrix]()
+- [Data Visualization]()
+    - Seminar 진행 : [Visualization Project](https://github.com/pizzalist/visualization_seminar)
+- [Time Series](./ml-study/time-series)
+- [Feature Engineering](./ml-study/feature-engineering/)
+    - Seminar 진행 : [Kaggle Preprocessor Lab Assginment]()
+
 
 ## HTML
 
