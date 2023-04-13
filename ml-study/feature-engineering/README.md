@@ -1,0 +1,35 @@
+# Data Preprocessing
+### 데이터 전처리
+
+- [개념](./concept.ipynb)
+    - ML Process
+    - **데이터 모판**
+    - **데이터 처리의 전략**
+    - 데이터 노트 작성
+    - Data cleansing issues
+- ### [Data_Preprocessing_1](./missing_value.ipynb)
+    - **Missing Value Strategy (결측치 처리)**
+    - Missing Value Handling
+- ### [Data_Preprocessing_2](./categorical_data.ipynb)
+    - **One-Hot Encoding** - pd.get_dummies()
+      - (+) map을 통한 데이터 이어 붙이기
+      - pd.get_dummies() sklearn으로 해보기 
+    - Data Binning - pd.cut()
+    - Label encoding by `sklearn` - LabelEncoder(), OneHotEncoder()
+    - Titanic 데이터셋으로 one-hot encoding
+- ### [Data_Preprocessing_3](./feature_scaling.ipynb)
+    - **Feature Scaling**
+    - Feature Scaling 전략 - Min-Max Normalization, Standardization
+    - Feature Scaling with `sklearn` - StandardScaler(), MinMaxScaler()
+- ### Data_Preprocessing_4
+    - **Feature Engineering 1** - Generation, [Selection](./feature_selection.ipynb)
+    - [Log Transformation](./log_transformation.ipynb)
+- ### Data_Preprocessing_5
+    - **Feature Engineering 2**
+    - [Mean Encoding](./mean_encoding.ipynb)
+    - [Interaction Feature](./interaction_features.ipynb)
+- ### [titanic 활용 실습](./titanic.ipynb)
+  - One-hot encoding
+  - Mean encoding
+  - Categorical combination
+  - Numeric data types
