@@ -1,5 +1,5 @@
 import numpy as np
-
+# as
 
 class LinearRegressionGD(object):
     def __init__(self, fit_intercept=True, copy_X=True,
