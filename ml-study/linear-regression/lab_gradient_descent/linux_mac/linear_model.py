@@ -1,5 +1,5 @@
 import numpy as np
-# as
+
 
 class LinearRegressionGD(object):
     def __init__(self, fit_intercept=True, copy_X=True,
@@ -26,7 +26,7 @@ class LinearRegressionGD(object):
         return X.dot(theta)
 
     def gradient(self, X, y, theta):
-        return (1/(len(y))) * np.sum((X.dot(theta)-y)).dot(X)
+        return (1/(len(y))) * (X.dot(theta)-y).dot(X)
 
     def fit(self, X, y):
         # Write your code
