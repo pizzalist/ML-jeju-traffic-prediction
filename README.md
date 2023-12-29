@@ -3,7 +3,7 @@
 - [ML study](./ml-study)를 마친 뒤, 실제 데이콘 경진대회 데이터를 활용하여 제주도 도로 교통량을 예측하고 리포트를 바탕으로 세미나를 진행한 프로젝트이다.
 
 ### 프로젝트 세부사항
-[Jeju Traffic Prediction Notion Page]("https://pepper-origami-952.notion.site/ML-jeju-traffic-prediction-75c0758007624c64bceccb2aa6cbbcb5?pvs=4")
+[Jeju Traffic Prediction Notion Page](https://pepper-origami-952.notion.site/ML-jeju-traffic-prediction-75c0758007624c64bceccb2aa6cbbcb5?pvs=4)
 
 > ### 배경 
 제주도내 주민등록인구는 2022년 기준 약 68만명으로, 연평균 1.3%정도 매년 증가하고 있습니다.
@@ -32,5 +32,13 @@
 > ### 평가 산식
 MAE
 
-## 리포트
+> ### data
+[데이콘 제주도 도로 교통량 예측 AI 경진대회](https://dacon.io/competitions/official/235985/overview/description)
+
+
+## 리포트 코드
 [jeju_traffic_prediction.ipynb](./jeju-traffic-prediction/jeju_traffic_prediction.ipynb)
+
+## 데이콘 리더보드 제출 해보기
+- 점수: 3.18186 (pizzalist)
+<img src="./board.png">
