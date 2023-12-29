@@ -1,44 +1,36 @@
-> # TIL :hammer:
 
-> Today I Learned :rocket:
+# 제주도 도로 교통량 예측 AI 
+- [ML study](./ml-study)를 마친 뒤, 실제 데이콘 경진대회 데이터를 활용하여 제주도 도로 교통량을 예측하고 리포트를 바탕으로 세미나를 진행한 프로젝트이다.
 
-## **목차**
+### 프로젝트 세부사항
+[Jeju Traffic Prediction Notion Page]("https://pepper-origami-952.notion.site/ML-jeju-traffic-prediction-75c0758007624c64bceccb2aa6cbbcb5?pvs=4")
 
----
-## ML
-- [Numpy](./ml-study/numpy)
-    - lab Assignment : [Numpy in a nutshell](./ml-study/numpy/1_lab_numypy)
-- [Pandas](./ml-study/data-handling/pandas/)
-    - lab Assignment : [Build a Matrix](./ml-study/data-handling/pandas/2_lab_build_matrix/)
-- [Data Visualization](./ml-study/data-handling/visualization/)
-    - Seminar 진행 : [Visualization Project](https://github.com/pizzalist/visualization_seminar)
-- [Time Series](./ml-study/time-series)
-- [Featurengineering](./ml-study/feature-engineering/)
-    - Seminar 진행 : [Kaggle Preprocessor Lab Assginment]()
+> ### 배경 
+제주도내 주민등록인구는 2022년 기준 약 68만명으로, 연평균 1.3%정도 매년 증가하고 있습니다.
+
+또한 외국인과 관광객까지 고려하면 전체 상주인구는 90만명을 넘을 것으로 추정되며, 
+
+제주도민 증가와 외국인의 증가로 현재 제주도의 교통체증이 심각한 문제로 떠오르고 있습니다.
 
 
-## HTML
+> ### 주제
+제주도 도로 교통량 예측 AI 알고리즘 개발
 
-- [HTML 개념 학습](https://github.com/pizzalist/TIL/blob/main/HTML-practice/HTML.md)
-- [HTML 생활코딩 실습](https://github.com/pizzalist/TIL/tree/main/HTML-practice/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9HTML%20%EC%8B%A4%EC%8A%B5)
 
-## CSS
+> ### 설명
+제주도의 교통 정보로부터 도로 교통량 회귀 예측
 
-- [CSS 개념 학습](https://github.com/pizzalist/TIL/blob/main/CSS-practice/CSS.md)
-- [CSS 생활코딩 실습](https://github.com/pizzalist/TIL/tree/main/CSS-practice/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9CSS)
 
-## JavaScript
+> ### 주최 / 주관
+주최: 제주 테크노파크, 제주특별자치도
+주관: 데이콘
 
-- [JavaScript Checklist](https://github.com/pizzalist/TIL/blob/main/JavaScript-practice/js.md)
-- [JavaScript 생활코딩 실습](https://github.com/pizzalist/TIL/tree/main/JavaScript-practice/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9JS.%EC%8B%A4%EC%8A%B5)
 
-## API
-- [open API](https://github.com/pizzalist/TIL/blob/main/open_API/API.md)
+> ### 참가자격
+일반인, 학생 등 누구나
 
-## DATABASE
+> ### 평가 산식
+MAE
 
-- [MySQL](https://github.com/pizzalist/TIL/blob/main/MySQL/MySQL.md)
-
-## Python
-
-- [Crawling](https://github.com/pizzalist/TIL/blob/main/Python%20crawling/Python_crawling.md)
+## 리포트
+[jeju_traffic_prediction.ipynb](./jeju-traffic-prediction/jeju_traffic_prediction.ipynb)

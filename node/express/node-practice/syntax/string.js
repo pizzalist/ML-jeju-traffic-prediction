@@ -1,2 +1,0 @@
-console.log("1"+"1");
-console.log("Cupidatat velit officia fugiat anim laboris ullamco ut tempor incididunt. Do id reprehenderit eiusmod adipisicing mollit sint culpa nostrud. Ut do minim aliquip sunt dolore veniam pariatur et do sunt quis ea excepteur nisi. Culpa in deserunt sint dolore mollit occaecat.".length)
