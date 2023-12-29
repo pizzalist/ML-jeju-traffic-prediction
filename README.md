@@ -2,7 +2,7 @@
 # 제주도 도로 교통량 예측 AI 
 - [ML study](./ml-study)를 마친 뒤, 실제 데이콘 경진대회 데이터를 활용하여 제주도 도로 교통량을 예측하고 리포트를 바탕으로 세미나를 진행한 프로젝트이다.
 
-### 프로젝트 세부사항
+### 프로젝트 세부사항 및 세미나 영상
 [Jeju Traffic Prediction Notion Page](https://pepper-origami-952.notion.site/ML-jeju-traffic-prediction-75c0758007624c64bceccb2aa6cbbcb5?pvs=4)
 
 > ### 배경 
